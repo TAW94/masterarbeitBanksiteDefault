@@ -59,17 +59,16 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BÄNQ<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="#hero-area2" class="h2 mb-0 smoothscroll">BÄNQ<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#about-section" class="nav-link">Kredit</a></li>
-                <li><a href="#services-section" class="nav-link">Antragsprozess</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Kundenmeinungen</a></li>
+                <li><a href="#hero-area2" class="nav-link">Home</a></li>
+                <li><a href="#kreditinformationen" class="nav-link">Kreditinformationen</a></li>
+                <li><a href="#persoenlicheInformationen" class="nav-link">Persönliche Informationen</a></li>
               </ul>
             </nav>
           </div>
@@ -88,10 +87,10 @@
         <div class="d-flex align-items-center" id="hero-area2" style="background-image: url(images/luke-chesser-pJadQetzTkI-unsplash.jpg);" data-aos="fade">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="text-center pt-50" id="header-kredit">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="text-center pt-50 w-lg-75" id="header-kredit">
                             <h2>Kreditantrag</h2>
-                            <h4>Bitte beantworte einige Fragen zu deiner persönlichen und finanziellen Situation:</h4>
+                            <h4>Es freut uns, dass du dich für einen BÄNQ Kredit entschieden hast. <br> Um den Kreditantrag einreichen zu können, benötigen wir zunächst noch einige Informationen von dir bezüglich deiner persönlichen und finanziellen Situation.</h4>
                         </div>
                     </div>
                 </div>
@@ -109,37 +108,39 @@
                             <form action="#">
                                 <div class="row">
 
+                                  <!-- Kreditinformationen -->
 
-                                  <div class="col-lg-12 pb-3">
-                                     <div class="single-form  d-flex">
-                                          <label>Welches Geschlecht hast du?</label>
-                                          <!--Radio Select -->
-                                         <div class="select-radio6">
-                                              <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="radio" />
-                                                    <span></span>
-                                                    Männlich
-                                                </label>
-                                              </div>
-                                              <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="radio" />
-                                                    <span></span>
-                                                    Weiblich
-                                                </label>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                  <div class="col-12 mb-3" id="kreditinformationen">
+                                    <h3>Kreditinformationen<span class="text-primary">.</span> </h3>
+                                    <hr>
+                                  </div>
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
-                                          <label>Wie viel Geld brauchst du? </label>
-                                          <input type="text" name="" placeholder="Enter name" value="17.000€">
+                                          <label >Wie viel Geld brauchst du? </label>
+                                          <input type="number" name="" value="17000" min="1000" max="50000" step="1" readonly>
                                      </div>
                                   </div>
 
+                                  <div class="col-lg-6">
+                                     <div class="single-form">
+                                          <label> Wie lange soll der Kredit laufen? </label>
+                                          <div class="select-option mb-10">
+                                              <select name="select" id="select1">
+                                                  <option value="">6 Monate</option>
+                                                  <option value="" selected>12 Monate</option>
+                                                  <option value="">18 Monate</option>
+                                                  <option value="">24 Monate</option>
+                                                  <option value="">30 Monate</option>
+                                                  <option value="">36 Monate</option>
+                                                  <option value="">42 Monate</option>
+                                                  <option value="">48 Monate</option>
+                                                  <option value="">54 Monate</option>
+                                                  <option value="">60 Monate</option>
+                                              </select>
+                                          </div>
+                                     </div>
+                                  </div>
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
@@ -162,21 +163,64 @@
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
+                                          <label >Effektivzins </label>
+                                          <input type="text" name="" value="4,59% p.a." readonly>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-lg-6">
+                                     <div class="single-form">
+                                          <label >Monatliche Rate </label>
+                                          <input type="text" name="" value="505,70 €" readonly>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-lg-6">
+                                     <div class="single-form">
+                                          <label >Rückzahlungsbetrag </label>
+                                          <input type="text" name="" value="18.205,20 €" readonly>
+                                     </div>
+                                  </div>
+
+
+                                  <!-- Persönliche Informationen -->
+
+                                  <div class="col-12 mb-3" id="persoenlicheInformationen">
+                                    <h3>Persönliche Informationen<span class="text-primary">.</span> </h3>
+                                    <hr>
+                                  </div>
+
+                                  <div class="col-lg-6">
+                                     <div class="single-form">
+                                          <label> Welches Geschlecht hast du? </label>
+                                          <div class="select-option mb-10">
+                                              <select name="select" id="select1">
+                                                  <option value="" selected disabled>Bitte wähle dein Geschlecht</option>
+                                                  <option value="">männlich</option>
+                                                  <option value="">weiblich</option>
+                                                  <option value="">divers</option>
+                                              </select>
+                                          </div>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-lg-6">
+                                     <div class="single-form">
                                           <label> Wie ist deine berufliche Situation? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
-                                                  <option value="">Geschäftsführender Gesellschafter</option>
-                                                  <option value="">leitender Angestellter</option>
-                                                  <option value="" selected>Angestellter</option>
-                                                  <option value="">Beamter</option>
-                                                  <option value="">Freiberufler</option>
-                                                  <option value="">Sonstiger Selbstständiger</option>
-                                                  <option value="">Arbeiter</option>
-                                                  <option value="">Schüler</option>
-                                                  <option value="">Student</option>
-                                                  <option value="">Auszubildender</option>
+                                                  <option value="">Geschäftsführende(r) Gesellschafter(in)</option>
+                                                  <option value="">leitende(r) Angestellte(r)</option>
+                                                  <option value="" selected>Angestellte(r)</option>
+                                                  <option value="">Beamte(r)</option>
+                                                  <option value="">Freiberufler(in)</option>
+                                                  <option value="">Sonstige(r) Selbstständige(r)</option>
+                                                  <option value="">Arbeiter(in)</option>
+                                                  <option value="">Schüler(in)</option>
+                                                  <option value="">Student(in)</option>
+                                                  <option value="">Auszubildende(r)</option>
                                                   <option value="">Hausfrau/-mann</option>
-                                                  <option value="">Rentner/Pensionär</option>
+                                                  <option value="">Rentner(in)/Pensionär(in)</option>
                                                   <option value="">ohne Beschäftigung</option>
                                                   <option value="">Sonstige</option>
                                               </select>
@@ -186,8 +230,8 @@
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
-                                          <label>Wann hat dein Vertrag begonnen? (TT.MM.JJJJ)</label>
-                                          <input type="text" name="" placeholder="Enter name" value="03.06.2019">
+                                          <label>Wann hat dein Vertrag begonnen?</label>
+                                          <input type="text" name="" placeholder="TT.MM.JJJJ" value="03.06.2019">
                                      </div>
                                   </div>
 
@@ -201,7 +245,6 @@
                                                   <option value="">Verwitwet</option>
                                                   <option value="">Geschieden</option>
                                                   <option value="">Getrennt lebend</option>
-                                                  <option value="">Es ist kompliziert</option>
                                               </select>
                                           </div>
                                      </div>
@@ -228,8 +271,8 @@
                                           <label> Wie sind deine gegenwärtigen Wohnverhältnisse? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
-                                                  <option value="">Eigentümer</option>
-                                                  <option value="" selected>Mieter</option>
+                                                  <option value="">Eigentümer(in)</option>
+                                                  <option value="" selected>Mieter(in)</option>
                                                   <option value="">Sonstige</option>
                                               </select>
                                           </div>
@@ -238,7 +281,7 @@
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
-                                          <label> Bist du Eigentümer von Immobilien? </label>
+                                          <label> Bist du Eigentümer(in) von Immobilien? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
                                                   <option value="">Ja</option>
@@ -250,7 +293,7 @@
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
-                                          <label> Bestitzt du ein Auto? </label>
+                                          <label> Besitzt du ein Auto? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
                                                   <option value="" selected>Ja</option>
@@ -259,21 +302,19 @@
                                           </div>
                                      </div>
                                   </div>
-                                  <div class="col-lg-6 d-none d-lg-block">
 
-                                  </div>
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
-                                          <label>Monatliches Nettoeinkommen </label>
-                                          <input type="text" name="" placeholder="Enter name" value="2.800€">
+                                          <label>Monatliches Nettoeinkommen in € </label>
+                                          <input type="number" name="" placeholder="Enter name" value="2800">
                                      </div>
                                   </div>
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
-                                          <label>Monatliche Ausgaben </label>
-                                          <input type="text" name="" placeholder="Enter name" value="2.250€">
+                                          <label>Monatliche Ausgaben in € </label>
+                                          <input type="number" name="" placeholder="Enter name" value="2250">
                                      </div>
                                   </div>
 
@@ -282,8 +323,10 @@
                             </form>
                             <!-- End From -->
                             <!-- Form btn -->
+                            <div class="col-lg-12 mt-5 d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary btn-lg p-3"> <span class="p-5">BÄNQ Kredit beantragen</span></a>
+                            </div>
 
-                             <a href="#" class="btn btn-primary btn-lg p-3"> <span class="p-5">Kredit beantragen</span></a>
                         </div>
                     </div>
                 </div>

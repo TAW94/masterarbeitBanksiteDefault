@@ -2356,14 +2356,37 @@ body:after {
 
 #header-kredit h2 {
   color: white;
-  margin: 0.65em 0;
+  margin: 1em 0;
+
 }
 
 #header-kredit h4 {
   color: white;
   font-weight: 400;
+  line-height: 1.5;
 }
 
+@media (max-width: 575px){
+
+  #header-kredit h2 {
+    font-size: 36px;
+    margin: 2em 0 1em 0;
+  }
+
+  #header-kredit h4 {
+    font-size: 20px;
+    line-height: 1.75;
+}
+}
+
+#kreditinformationen h3 {
+  color: #212529;
+}
+
+#persoenlicheInformationen h3 {
+  color: #212529;
+  margin-top: 3rem;
+}
 
 
 /* Nice-Select und Radio Button CSS Start */
@@ -2489,11 +2512,12 @@ body:after {
 
 .apply-area .apply-wrapper .single-form label {
   display: block;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 11px;
   color: #212529;
   /* text-transform: uppercase; */
   font-weight: 500;
+  /* min-height: 62px; */
 }
 
 .apply-area .apply-wrapper .single-form input {
@@ -2556,6 +2580,21 @@ body:after {
 .current {
   color: FFFFFF;
 }
+
+
+/* Arrows bei Number verstecken */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 
 /* Als erstes verstecken wir die Standard Form-Elemente */
