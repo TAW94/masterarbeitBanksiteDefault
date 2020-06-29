@@ -2821,6 +2821,14 @@ ansprechen, indem Fall unsere Label mit darin enthalten span.
 }
 
 
+/* Dynamischer Content / dynamicContent */
+
+.dynamicContent {
+  display: none;
+}
+
+
+
 
 
 /* Erklärungen FAQ Liste */
