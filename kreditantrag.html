@@ -88,7 +88,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <div class="headerbereich2 text-center pt-50 w-lg-75" id="header-kredit">
+                        <div class="headerbereich2 text-center w-lg-75" id="header-kredit">
                             <h2>Kreditantrag</h2>
                             <h4>Es freut uns, dass du dich für einen BÄNQ Kredit entschieden hast. <br> Um den Kreditantrag einreichen zu können, benötigen wir zunächst noch einige Informationen von dir bezüglich deiner persönlichen und finanziellen Situation.</h4>
                         </div>
@@ -193,7 +193,7 @@
                                   <div class="col-lg-6">
                                      <div class="single-form">
                                           <label>Wie ist dein Geburtsdatum?</label>
-                                          <input type="text" name="" placeholder="TT.MM.JJJJ" value="">
+                                          <input type="text" name="" placeholder="13.05.1987" value="">
                                      </div>
                                   </div>
 
@@ -238,7 +238,7 @@
                                   <div class="col-lg-6">
                                      <div class="single-form">
                                           <label>Wann hat dein Vertrag begonnen?</label>
-                                          <input type="text" name="" placeholder="TT.MM.JJJJ" value="03.06.2019">
+                                          <input type="text" name="" placeholder="TT.MM.JJJJ" value="03.06.2018">
                                      </div>
                                   </div>
 
@@ -247,11 +247,11 @@
                                           <label> Arbeitgeber in den letzten 5 Jahren? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
-                                                  <option value="" selected disabled>Bitte Anzahl wählen</option>
-                                                  <option value="">1</option>
-                                                  <option value="">2</option>
-                                                  <option value="">3</option>
-                                                  <option value="">4 oder mehr</option>
+                                                  <!-- <option value="" disabled>Bitte Anzahl wählen</option> -->
+                                                  <option value="" disabled>1</option>
+                                                  <option value="" selected>2</option>
+                                                  <option value="" disabled>3</option>
+                                                  <option value="" disabled>4 oder mehr</option>
                                               </select>
                                           </div>
                                      </div>
@@ -262,8 +262,8 @@
                                           <label> Wie ist dein Beziehungsstatus? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
-                                                  <option value=""selected>Ledig</option>
-                                                  <option value="" disabled>Verheiratet</option>
+                                                  <option value="" disabled>Ledig</option>
+                                                  <option value="" disabled selected>Verheiratet</option>
                                                   <option value="" disabled>Verwitwet</option>
                                                   <option value="" disabled>Geschieden</option>
                                                   <option value="" disabled>Getrennt lebend</option>
@@ -277,9 +277,9 @@
                                           <label> Von deinem Einkommen abhängige Personen? </label>
                                           <div class="select-option mb-10">
                                               <select name="select" id="select1">
-                                                  <option value=""selected>Nur ich</option>
+                                                  <option value="" disabled>Nur ich</option>
                                                   <option value="" disabled>Mein Partner und ich</option>
-                                                  <option value="" disabled>Drei</option>
+                                                  <option value="" disabled selected>Drei</option>
                                                   <option value="" disabled>Vier</option>
                                                   <option value="" disabled>Fünf</option>
                                                   <option value="" disabled>Sechs oder mehr</option>
@@ -329,14 +329,14 @@
                                   <div class="col-lg-6">
                                      <div class="single-form">
                                           <label>Monatliches Nettoeinkommen in € </label>
-                                          <input type="number" name="" placeholder="Enter name" value="2800">
+                                          <input type="number" name="" placeholder="Enter name" value="2800" readonly>
                                      </div>
                                   </div>
 
                                   <div class="col-lg-6">
                                      <div class="single-form">
                                           <label>Monatliche Ausgaben in € </label>
-                                          <input type="number" name="" placeholder="Enter name" value="2250">
+                                          <input type="number" name="" placeholder="Enter name" value="2250" readonly>
                                      </div>
                                   </div>
 

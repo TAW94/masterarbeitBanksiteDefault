@@ -2314,7 +2314,7 @@ body:after {
 @media (max-width: 575px){
 
   #hero-area2 {
-    min-height: 560px;
+    min-height: 675px;
   }
 
   #hero-area2 h2 {
@@ -2677,79 +2677,7 @@ ansprechen, indem Fall unsere Label mit darin enthalten span.
 }
 
 
-/* Entscheidungsseite mit Collapsable aka Einstürzerle */
 
-  .einstürzer i {
-
-    position: absolute;
-    right: 15px;
-    top: 3px;
-    transition: .3s transform ease-in-out;
-  }
-
-  @media (max-width: 575px) {
-    .einstürzer i{
-      top: -3px;
-      right: 10px;
-    }
-  }
-
-
-  .einstürzer .collapsed i {
-    transform: rotate(180deg);
-  }
-
-
-  .einstürzer a.collapsed {
-    color: #343a40;
-  }
-
-  .einstürzer a.collapsed:hover {
-    color: #4285f4;
-  }
-
-  .einstürzer a.collapsed .icon-show {
-    display: inline-block;
-  }
-
-  /* .einstürzer a.collapsed .icon-close {
-    display: none;
-  } */
-
-
-#zusammenfassung {
-  cursor: pointer;
-}
-
-#zusammenfassung h2 {
-  color: #212529;
-}
-
-.einstürzer-titel {
-  font-size:2rem;
-}
-
-.einstürzer-titel h2 {
-  color: #212529;
-}
-
-#zusammenfassung .zusammenfassung-inhalt input {
-  width: 300px;
-}
-
-.zusammenfassung-inhalt label {
-  margin-bottom: 20px;
-}
-
-@media (max-width: 575px) {
-
-  .einstürzer-titel {
-    font-size: 1.5rem;
-    font-weight: 600;
-
-  }
-
-}
 
 #entscheidungs-section {
   background-color: whitesmoke;
@@ -2759,7 +2687,7 @@ ansprechen, indem Fall unsere Label mit darin enthalten span.
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  margin: 4rem 0 4rem 0;
+  margin: 4rem 0 0 0;
   color: #212529;
 }
 
@@ -2778,6 +2706,7 @@ ansprechen, indem Fall unsere Label mit darin enthalten span.
   }
 
 }
+
 
 #backToSurvey {
   background-color: whitesmoke;
@@ -2828,66 +2757,95 @@ ansprechen, indem Fall unsere Label mit darin enthalten span.
 }
 
 
+/* Collapsible Allgemeincode! */
+
+/* Entscheidungsseite mit Collapsible aka Einstürzerle */
+
+  /* .progressive-disclosure {
+
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    transition: .3s transform ease-in-out;
+  } */
+
+  .progressive-disclosure i {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    transition: .3s transform ease-in-out;
+  }
 
 
+  @media (max-width: 575px) {
+    .progressive-disclosure i{
+      top: -3px;
+      right: 10px;
+    }
+  }
 
-/* Erklärungen FAQ Liste */
 
-.faq-list {
-  padding: 0;
-  list-style: none;
+  .progressive-disclosure .collapsed i {
+    transform: rotate(180deg);
+  }
+
+
+  .progressive-disclosure a.collapsed {
+    color: #343a40;
+  }
+
+  .progressive-disclosure a.collapsed:hover {
+    color: #4285f4;
+  }
+
+  .progressive-disclosure a.collapsed .icon-show {
+    display: inline-block;
+  }
+
+  /* .einstürzer a.collapsed .icon-close {
+    display: none;
+  } */
+
+
+.black-link {
+  cursor: pointer;
 }
 
-.faq-list li {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.faq-list-item a {
-  display: block;
-  position: relative;
-  font-family: #7cc576;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-right: 25px;
+.black-link h2 {
   color: #212529;
 }
 
-.faq-list-item i {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .5s transform ease-in-out;
+.progressive-disclosure h2 {
+  font-size:2rem;
+  color: #212529;
 }
 
-.faq-list-item .collapsed i {
-  transform: rotate(180deg);
+#zusammenfassung .zusammenfassung-inhalt input {
+  width: 300px;
 }
 
-.faq-list-item p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
+.zusammenfassung-inhalt label {
+  margin-bottom: 20px;
 }
 
-/* .faq-list-item .icon-show {
-  display: none;
-} */
+@media (max-width: 575px) {
 
-.faq-list-item a.collapsed {
-  color: #343a40;
+  .progressive-disclosure h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+
+  }
+
 }
 
-/* .faq .faq-list a.collapsed:hover {
-  color: #4285f4;
-} */
 
-
-.faq-list-item a.collapsed .icon-show {
-  display: inline-block;
+.localExplanationImage img {
+  width: 100%;
+  height: auto;
 }
+
+
+
 
 
 
