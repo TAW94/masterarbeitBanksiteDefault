@@ -41,8 +41,8 @@ $(document).ready(function() {
  }
 
  // alert(dynamicLink);
- alert(dynamicContent);
+ // alert(dynamicContent);
 
- $("#backToSurveyLink").attr("href", dynamicLink);
+ $("#backToSurveyLink").attr("href", "www.google.de/" +dynamicContent);
 
 });

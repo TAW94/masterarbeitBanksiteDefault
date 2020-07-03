@@ -12,12 +12,12 @@
 	}
 
 	// clears local storage
-	window.localStorage.clear();
+	//window.localStorage.clear();
 
 	// Give the parameter a variable name
 	var dynamicContent = getParameterByName('grp');
 
 	// save new defined parameter variable to local storage
 	localStorage.setItem("dynamicContent", dynamicContent);
-	
+
 	// localStorage.setItem(dynamicContent, getParameterByName("grp"));
