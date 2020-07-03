@@ -28,4 +28,5 @@ $(document).ready(function() {
 
  $("#backToSurveyLink").attr("href", "https://www.google.de/search?q=" +dynamicContent);
 
+
 });
