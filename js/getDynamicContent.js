@@ -2,27 +2,13 @@ $(document).ready(function() {
 
   var dynamicContent = localStorage.getItem("dynamicContent");
 
-  // if(window.location.href === "https://taw94.github.io/masterarbeitBanksiteDefault/entscheidung.html/" || window.location.href === "file:///C:/Users/timwo/github/masterarbeitBanksiteDefault/entscheidung.html"){
-
- // $('#erklärungssection-000').addClass('dynamicContent');
- // $('#erklärungssection-010').addClass('dynamicContent');
- // $('#erklärungssection-011').addClass('dynamicContent');
- // $('#erklärungssection-100').addClass('dynamicContent');
- // $('#erklärungssection-101').addClass('dynamicContent');
- // $('#erklärungssection-110').addClass('dynamicContent');
- // $('#erklärungssection-111').addClass('dynamicContent');
-
-  // var dynamicContent = localStorage.getItem("groupKey");
-
- // Check if the URL parameter is apples
+ // Check if the URL parameter is 0-1-0, else checks all other group parameters. No group = 0-0-0
  if (dynamicContent == "0-1-0") {
    $('#erklärungssection-010').show();
  }
- // Check if the URL parameter is oranges
  else if (dynamicContent == "0-1-1") {
    $('#erklärungssection-011').show();
  }
- // Check if the URL parameter is bananas
  else if (dynamicContent == "1-0-0") {
    $('#erklärungssection-100').show();
  }
@@ -40,9 +26,6 @@ $(document).ready(function() {
    $('#erklärungssection-000').show();
  }
 
- // alert(dynamicLink);
- // alert(dynamicContent);
-
- $("#backToSurveyLink").attr("href", "www.google.de/" +dynamicContent);
+ $("#backToSurveyLink").attr("href", "https://www.google.de/search?q=" +dynamicContent);
 
 });

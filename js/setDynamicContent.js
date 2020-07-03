@@ -19,5 +19,3 @@
 
 	// save new defined parameter variable to local storage
 	localStorage.setItem("dynamicContent", dynamicContent);
-
-	// localStorage.setItem(dynamicContent, getParameterByName("grp"));
