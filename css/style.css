@@ -2389,10 +2389,6 @@ body:after {
 }
 
 
-#entscheidung-header h2 {
-
-}
-
 
 /* Nice-Select und Radio Button CSS Start */
 
@@ -2844,7 +2840,10 @@ ansprechen, indem Fall unsere Label mit darin enthalten span.
   height: auto;
 }
 
-
+/* Lässt header mit Gruppenkennzeichnung der jeweiligen Erklärung verschwinden */
+.explanation-header {
+  display: none;
+}
 
 
 
