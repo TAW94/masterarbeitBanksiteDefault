@@ -27,7 +27,7 @@ $(document).ready(function() {
    $('#erklärungssection-000').show();
  }
 
- $("#backToSurveyLink").attr("href", "https://ww2.unipark.de/uc/Studierende_FPE/8770/ospe.php?return_tic=" +tic);
+ $("#backToSurveyLink").attr("href", "https://ww2.unipark.de/uc/ki_credit_scoring/ospe.php?return_tic=" +tic);
 
 
 });
