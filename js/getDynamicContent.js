@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var dynamicContent = localStorage.getItem("dynamicContent");
+  var tic = localStorage.getItem("tic");
 
  // Check if the URL parameter is 0-1-0, else checks all other group parameters. No group = 0-0-0
  if (dynamicContent == "0-1-0") {
@@ -26,7 +27,7 @@ $(document).ready(function() {
    $('#erklärungssection-000').show();
  }
 
- $("#backToSurveyLink").attr("href", "https://www.google.de/search?q=" +dynamicContent);
+ $("#backToSurveyLink").attr("href", "https://ww2.unipark.de/uc/Studierende_FPE/8770/ospe.php?return_tic=" +tic);
 
 
 });
